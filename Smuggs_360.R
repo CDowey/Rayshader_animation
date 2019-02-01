@@ -1,6 +1,8 @@
 library(rayshader)
 library(magrittr)
 
+# Create a series of .pngs for sun angles 1-360 in rayshade and sphereshade
+
 # Load raster
 tiff_path = "./Smuggs_LiDAR_Resample_Clip.tif"
 tiff = raster::raster(tiff_path)
