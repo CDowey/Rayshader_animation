@@ -21,7 +21,7 @@ for (i in 1:360){
   
   ambmat = ambient_shade(elmat)
 
-  filepath = paste("./360/", i, ".png", sep='')
+  filepath = paste("./", i, ".png", sep='')
 
   elmat %>% sphere_shade(texture = "bw", sunangle = sa1) %>%
     add_shadow(raymat, 0.8) %>%
